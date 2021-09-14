@@ -16,4 +16,29 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         Timber.i("onStart was called")
     }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.i("onResume called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop called")
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.i("onPause method called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Timber.i("onRestart called")
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Timber.i("onDestroy method called")
+    }
 }
